@@ -364,6 +364,16 @@ body {
     gap: 16px;
     animation: float-gentle 4s ease-in-out infinite;
     border: 1px solid rgba(102, 102, 241, 0.1);
+    cursor: move;
+    touch-action: none;
+    user-select: none;
+    z-index: 1;
+}
+
+.hero-image-card.dragging {
+    opacity: 0.8;
+    z-index: 10;
+    animation: none;
 }
 
 .hero-image-card.card-1 {

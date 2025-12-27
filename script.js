@@ -414,7 +414,84 @@ if ('IntersectionObserver' in window) {
     lazyImages.forEach(img => imageObserver.observe(img));
 }
 
+// Draggable hero cards functionality
+const draggableCards = document.querySelectorAll('.draggable-card');
+
+draggableCards.forEach(card => {
+    let isDragging = false;
+    let currentX;
+    let currentY;
+    let initialX;
+    let initialY;
+    let xOffset = 0;
+    let yOffset = 0;
+
+    // Get initial position
+    const computedStyle = window.getComputedStyle(card);
+    const matrix = new DOMMatrixReadOnly(computedStyle.transform);
+    xOffset = matrix.m41;
+    yOffset = matrix.m42;
+
+    // Mouse events
+    card.addEventListener('mousedown', dragStart);
+    document.addEventListener('mousemove', drag);
+    document.addEventListener('mouseup', dragEnd);
+
+    // Touch events for mobile
+    card.addEventListener('touchstart', dragStart, { passive: false });
+    document.addEventListener('touchmove', drag, { passive: false });
+    document.addEventListener('touchend', dragEnd);
+
+    function dragStart(e) {
+        if (e.type === 'touchstart') {
+            initialX = e.touches[0].clientX - xOffset;
+            initialY = e.touches[0].clientY - yOffset;
+        } else {
+            initialX = e.clientX - xOffset;
+            initialY = e.clientY - yOffset;
+        }
+
+        if (e.target === card || card.contains(e.target)) {
+            isDragging = true;
+            card.classList.add('dragging');
+        }
+    }
+
+    function drag(e) {
+        if (isDragging) {
+            e.preventDefault();
+
+            if (e.type === 'touchmove') {
+                currentX = e.touches[0].clientX - initialX;
+                currentY = e.touches[0].clientY - initialY;
+            } else {
+                currentX = e.clientX - initialX;
+                currentY = e.clientY - initialY;
+            }
+
+            xOffset = currentX;
+            yOffset = currentY;
+
+            setTranslate(currentX, currentY, card);
+        }
+    }
+
+    function dragEnd(e) {
+        if (isDragging) {
+            initialX = currentX;
+            initialY = currentY;
+            isDragging = false;
+            card.classList.remove('dragging');
+        }
+    }
+
+    function setTranslate(xPos, yPos, el) {
+        el.style.transform = `translate(${xPos}px, ${yPos}px)`;
+    }
+});
+
 // Console message for developers
 console.log('%c🔧 Ambitious Handy Man Website', 'font-size: 20px; font-weight: bold; color: #6366f1;');
 console.log('%cBuilt with ❤️ using HTML, CSS, and JavaScript', 'font-size: 14px; color: #64748b;');
 console.log('%cNeed help? Contact: hello@ambitioushandy.com', 'font-size: 12px; color: #64748b;');
+console.log('%c💡 Tip: You can drag the floating cards on the hero section!', 'font-size: 12px; color: #6366f1;');
