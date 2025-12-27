@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ambitious Handy Man - Professional handyman services for all your home repair and improvement needs">
+    <title>Ambitious Handy Man | Professional Home Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-text">Ambitious<span class="highlight">Handy</span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="cta-button">Get Started</button>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+            <div class="hero-shape shape-3"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">🏆 Trusted by 1000+ Happy Customers</div>
+                <h1 class="hero-title">
+                    Your Home Deserves 
+                    <span class="gradient-text">Expert Care</span>
+                </h1>
+                <p class="hero-description">
+                    Professional handyman services that transform your house into the home of your dreams. 
+                    From quick fixes to major renovations, we've got you covered.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                        Book a Service
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('services')">
+                        Explore Services
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">5K+</div>
+                        <div class="stat-label">Jobs Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Satisfaction Rate</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support Available</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-card card-1">
+                    <div class="card-icon">🔧</div>
+                    <div class="card-text">
+                        <div class="card-title">Quick Response</div>
+                        <div class="card-subtitle">Same day service</div>
+                    </div>
+                </div>
+                <div class="hero-image-card card-2">
+                    <div class="card-icon">⭐</div>
+                    <div class="card-text">
+                        <div class="card-title">Top Rated</div>
+                        <div class="card-subtitle">5.0 average rating</div>
+                    </div>
+                </div>
+                <div class="hero-image-card card-3">
+                    <div class="card-icon">✅</div>
+                    <div class="card-text">
+                        <div class="card-title">Quality Guaranteed</div>
+                        <div class="card-subtitle">100% satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll to explore</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Expertise</span>
+                <h2 class="section-title">Services We Provide</h2>
+                <p class="section-description">
+                    From minor repairs to major projects, our skilled professionals handle it all with precision and care
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-delay="0">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="8" width="32" height="32" rx="8" fill="currentColor" opacity="0.1"/>
+                            <path d="M24 14L20 18M24 14L28 18M24 14V28M16 34H32C33.1046 34 34 33.1046 34 32V24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Home Repairs</h3>
+                    <p class="service-description">
+                        Fix leaky faucets, patch drywall, repair doors, windows, and tackle all household repairs efficiently
+                    </p>
+                    <ul class="service-features">
+                        <li>✓ Plumbing fixes</li>
+                        <li>✓ Drywall repair</li>
+                        <li>✓ Door & window repair</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-delay="100">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="8" width="32" height="32" rx="8" fill="currentColor" opacity="0.1"/>
+                            <path d="M14 18H34M14 24H34M14 30H28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Furniture Assembly</h3>
+                    <p class="service-description">
+                        Professional assembly of all furniture types - IKEA, beds, desks, shelving units, and more
+                    </p>
+                    <ul class="service-features">
+                        <li>✓ IKEA furniture</li>
+                        <li>✓ Office furniture</li>
+                        <li>✓ Kids room setup</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-delay="200">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="8" width="32" height="32" rx="8" fill="currentColor" opacity="0.1"/>
+                            <rect x="14" y="14" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M18 28V32M30 28V32M12 32H36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">TV & Picture Mounting</h3>
+                    <p class="service-description">
+                        Secure wall mounting for TVs, artwork, shelves, mirrors with perfect leveling and cable management
+                    </p>
+                    <ul class="service-features">
+                        <li>✓ TV wall mounting</li>
+                        <li>✓ Art & frame hanging</li>
+                        <li>✓ Shelf installation</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-delay="300">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="8" width="32" height="32" rx="8" fill="currentColor" opacity="0.1"/>
+                            <path d="M24 16V32M24 16L18 22M24 16L30 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Electrical Services</h3>
+                    <p class="service-description">
+                        Licensed electrical work including fixture installation, outlet repairs, and lighting solutions
+                    </p>
+                    <ul class="service-features">
+                        <li>✓ Light fixture install</li>
+                        <li>✓ Outlet repair</li>
+                        <li>✓ Switch replacement</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-delay="400">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="8" width="32" height="32" rx="8" fill="currentColor" opacity="0.1"/>
+                            <path d="M16 24C16 24 18 20 24 20C30 20 32 24 32 24M20 28H28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Painting & Touch-ups</h3>
+                    <p class="service-description">
+                        Interior and exterior painting, color consultation, and professional finishing touches
+                    </p>
+                    <ul class="service-features">
+                        <li>✓ Interior painting</li>
+                        <li>✓ Exterior painting</li>
+                        <li>✓ Wall preparation</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-delay="500">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="8" width="32" height="32" rx="8" fill="currentColor" opacity="0.1"/>
+                            <path d="M14 20L24 14L34 20M16 22V32C16 33.1046 16.8954 34 18 34H30C31.1046 34 32 33.1046 32 32V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Renovation Projects</h3>
+                    <p class="service-description">
+                        Complete room makeovers, kitchen updates, bathroom remodels, and custom carpentry work
+                    </p>
+                    <ul class="service-features">
+                        <li>✓ Kitchen remodels</li>
+                        <li>✓ Bathroom updates</li>
+                        <li>✓ Custom carpentry</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Simple Process</span>
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-description">
+                    Get your home projects done in three simple steps
+                </p>
+            </div>
+            <div class="steps-container">
+                <div class="step-card" data-aos="fade-right">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">📅</div>
+                    <h3 class="step-title">Book Your Service</h3>
+                    <p class="step-description">
+                        Choose your service, select a convenient time slot, and provide project details through our easy booking system
+                    </p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step-card" data-aos="fade-up" data-delay="200">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">🛠️</div>
+                    <h3 class="step-title">We Get to Work</h3>
+                    <p class="step-description">
+                        Our vetted professional arrives on time with all necessary tools and materials to complete your project efficiently
+                    </p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step-card" data-aos="fade-left" data-delay="400">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">✨</div>
+                    <h3 class="step-title">Enjoy the Results</h3>
+                    <p class="step-description">
+                        Inspect the completed work, we clean up completely, and you enjoy your upgraded space with our quality guarantee
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="why-choose-grid">
+                <div class="why-choose-content">
+                    <span class="section-badge">Why Choose Us</span>
+                    <h2 class="section-title">Experience Excellence in Every Project</h2>
+                    <p class="section-description">
+                        We're not just another handyman service. We're your trusted partner in home improvement, 
+                        committed to delivering exceptional results every time.
+                    </p>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">🎯</div>
+                            <div class="feature-content">
+                                <h4>Background Checked Professionals</h4>
+                                <p>All our technicians are thoroughly vetted and certified</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">💯</div>
+                            <div class="feature-content">
+                                <h4>100% Satisfaction Guarantee</h4>
+                                <p>We're not happy until you're completely satisfied</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">⚡</div>
+                            <div class="feature-content">
+                                <h4>Same Day Service Available</h4>
+                                <p>Need it done today? We've got you covered</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">💬</div>
+                            <div class="feature-content">
+                                <h4>Transparent Communication</h4>
+                                <p>Real-time updates and clear pricing from start to finish</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-choose-visual">
+                    <div class="visual-card card-large">
+                        <div class="card-header">
+                            <span class="card-badge">Premium Service</span>
+                        </div>
+                        <div class="card-metric">
+                            <div class="metric-value">4.9/5.0</div>
+                            <div class="metric-label">Customer Rating</div>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <div class="visual-card card-small">
+                        <div class="card-icon-large">🏆</div>
+                        <div class="card-stat">
+                            <div class="stat-value">10+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                    <div class="visual-card card-small">
+                        <div class="card-icon-large">👥</div>
+                        <div class="card-stat">
+                            <div class="stat-value">50+</div>
+                            <div class="stat-label">Expert Technicians</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Customer Reviews</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-description">
+                    Don't just take our word for it - hear from our satisfied customers
+                </p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Absolutely fantastic service! They mounted my 65" TV and installed floating shelves in under 2 hours. 
+                        Professional, punctual, and the pricing was very fair. Highly recommend!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div class="author-info">
+                            <div class="author-name">Jessica Davis</div>
+                            <div class="author-service">TV Mounting & Shelving</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-delay="100">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "I hired them for a complete bathroom renovation and couldn't be happier. The attention to detail was 
+                        incredible, and they stayed within budget. My bathroom looks like something from a magazine!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MT</div>
+                        <div class="author-info">
+                            <div class="author-name">Michael Thompson</div>
+                            <div class="author-service">Bathroom Renovation</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-delay="200">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Quick response for an emergency plumbing issue. They arrived within hours, fixed the problem efficiently, 
+                        and cleaned up perfectly. Lifesavers! Will definitely use them again."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SR</div>
+                        <div class="author-info">
+                            <div class="author-name">Sarah Rodriguez</div>
+                            <div class="author-service">Emergency Plumbing</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-delay="300">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Assembled all the furniture for my new apartment - bed frame, desk, bookshelf, and dresser. 
+                        Everything was done perfectly in half the time I expected. Worth every penny!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DK</div>
+                        <div class="author-info">
+                            <div class="author-name">David Kim</div>
+                            <div class="author-service">Furniture Assembly</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-delay="400">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Painted my living room and kitchen. The prep work was meticulous, lines are crisp, and the finish 
+                        is flawless. Plus they were incredibly respectful of my home. A+ service!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">EC</div>
+                        <div class="author-info">
+                            <div class="author-name">Emily Chen</div>
+                            <div class="author-service">Interior Painting</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-delay="500">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Needed several repairs around the house - leaky faucet, broken door handle, drywall patch. 
+                        They handled everything in one visit. Super convenient and saved me so much time!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RJ</div>
+                        <div class="author-info">
+                            <div class="author-name">Robert Johnson</div>
+                            <div class="author-service">Multiple Home Repairs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-badge">Get In Touch</span>
+                    <h2 class="section-title">Ready to Transform Your Home?</h2>
+                    <p class="section-description">
+                        Book your service today and experience the difference professional craftsmanship makes
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-text">
+                                <div class="contact-label">Call Us</div>
+                                <div class="contact-value">(555) 123-4567</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-text">
+                                <div class="contact-label">Email Us</div>
+                                <div class="contact-value">hello@ambitioushandy.com</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-text">
+                                <div class="contact-label">Service Area</div>
+                                <div class="contact-value">Serving Your Local Area</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">⏰</div>
+                            <div class="contact-text">
+                                <div class="contact-label">Hours</div>
+                                <div class="contact-value">Mon-Sat: 7AM - 8PM</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trust-badges">
+                        <div class="trust-badge">✓ Licensed & Insured</div>
+                        <div class="trust-badge">✓ 5-Star Rated</div>
+                        <div class="trust-badge">✓ Same Day Service</div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="home-repairs">Home Repairs</option>
+                                <option value="furniture-assembly">Furniture Assembly</option>
+                                <option value="tv-mounting">TV & Picture Mounting</option>
+                                <option value="electrical">Electrical Services</option>
+                                <option value="painting">Painting & Touch-ups</option>
+                                <option value="renovation">Renovation Projects</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details *</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Describe your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Request Free Quote
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <p class="form-note">We'll respond within 2 hours during business hours</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <span class="logo-text">Ambitious<span class="highlight">Handy</span></span>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted partner for all home repair and improvement needs. Professional service, guaranteed satisfaction.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Home Repairs</a></li>
+                        <li><a href="#services">Furniture Assembly</a></li>
+                        <li><a href="#services">TV Mounting</a></li>
+                        <li><a href="#services">Electrical Work</a></li>
+                        <li><a href="#services">Painting</a></li>
+                        <li><a href="#services">Renovations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">About Us</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="footer-newsletter-text">Get tips, deals, and updates delivered to your inbox</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" aria-label="Subscribe">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ambitious Handy Man. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Message Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">✅</div>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for reaching out. We'll get back to you within 2 hours during business hours.</p>
+            <button class="btn btn-primary" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
