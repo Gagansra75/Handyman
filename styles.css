@@ -84,9 +84,15 @@ body {
     padding: 12px 24px;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 .logo-text {
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 800;
     color: var(--dark);
 }
@@ -99,7 +105,7 @@ body {
 }
 
 .logo-image {
-    height: 45px;
+    height: 95px;
     width: auto;
     object-fit: contain;
     transition: var(--transition);
@@ -1050,6 +1056,9 @@ section {
 
 .footer-logo {
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .footer-description {
